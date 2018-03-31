@@ -149,13 +149,13 @@ On a very old systems, **one of** these might work::
 
   % easy_install sht-sensor
 
-  % git clone --depth=1 https://github.com/mk-fg/sht-sensor
+  % git clone --depth=1 https://github.com/kizniche/sht-sensor
   % cd sht-sensor
   % python setup.py install
 
 Current-git version can be installed like this::
 
-  % pip install 'git+https://github.com/mk-fg/sht-sensor.git#egg=sht-sensor'
+  % pip install 'git+https://github.com/kizniche/sht-sensor.git#egg=sht-sensor'
 
 Note that to install stuff to system-wide PATH and site-packages (without
 --user), elevated privileges (i.e. root and su/sudo) are often required.

@@ -23,7 +23,7 @@ setup(
 		' environment conditioning measurement'
 		' gpio hardware driver serial 2-wire crc8' ),
 
-	url = 'http://github.com/mk-fg/sht-sensor',
+	url = 'http://github.com/kizniche/sht-sensor',
 
 	description = 'Driver and command-line tool'
 		' for Sensirion SHT1x and SHT7x sensors connected to GPIO pins.',
