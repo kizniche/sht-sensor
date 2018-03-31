@@ -1,8 +1,8 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 #-*- coding: utf-8 -*-
+import os
 
 from setuptools import setup, find_packages
-import os, sys
 
 # Error-handling here is to allow package to be built w/o README included
 try:
@@ -13,9 +13,10 @@ except IOError: readme = ''
 setup(
 
 	name = 'sht-sensor',
-	version = '18.3.3',
+	version = '18.3.4',
 	author = 'Mike Kazantsev',
 	author_email = 'mk.fraggod@gmail.com',
+	maintainer='Kyle Gabriel',
 	license = 'WTFPL',
 	keywords = ( 'sht sensor sensirion ic'
 		' sht1x sht7x sht10 sht11 sht15 sht71 sht75'
