@@ -122,10 +122,7 @@ sht_sensor ...`` convention.
 Installation
 ------------
 
-It's a regular package for Python 2.7 (not 3.X).
-
-If you have Python-3.x on linux as default "python" command (run ``python
---version`` to check), be sure to use python2/pip2 and such below.
+It's a regular package for Python 2.7 and 3.5.
 
 Using pip_ is the best way::
 

@@ -7,9 +7,9 @@ import logging
 import os
 import select
 import time
-from os.path import join, exists
 
 from builtins import range
+from os.path import join, exists
 
 
 class OnDemandLogger(object):
