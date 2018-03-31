@@ -4,6 +4,11 @@ sht-sensor
 Python driver and command-line tool for Sensirion SHT1x and SHT7x sensors
 connected to GPIO pins.
 
+Originally written by `Mike Kazantsev <mk.fraggod@gmail.com>`_
+(`mk-fg <https://github.com/mk-fg>`_)). Python 2.7-only verion at
+`mk-fg/sht-sensor <https://github.com/mk-fg/sht-sensor>`_ for historial purposes.
+This repository includes support for Python 2.7/3.5.
+
 
 .. contents::
   :backlinks: none
