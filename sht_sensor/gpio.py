@@ -24,7 +24,7 @@ path_gpio = '/sys/class/gpio'
 
 class GPIOAccessFailure(Exception): pass
 
-def gpio_access_wrap(func, checks=12, timeout=1.0):
+def gpio_access_wrap(func, checks=12, timeout=2.0):
 	for n in range(checks, -1, -1):
 		try: return func()
 		except (IOError, OSError): pass
@@ -47,7 +47,7 @@ def get_pin_path(n, sub=None, _cache=dict()):
 			else: break
 			log.debug('Exporting pin: %s', n)
 			with open(join(path_gpio, 'export'), 'wb', 0) as dst:
-				gpio_access_wrap(ft.partial(dst.write, bytes(n)))
+				gpio_access_wrap(ft.partial(dst.write, bytes(str(n).encode('utf-8'))))
 		_cache[n] = path
 	else: path = _cache[n]
 	return path if not sub else os.path.join(path, sub)

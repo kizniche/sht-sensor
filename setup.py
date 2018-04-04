@@ -13,7 +13,7 @@ except IOError: readme = ''
 setup(
 
 	name = 'sht-sensor',
-	version = '18.4.0',
+	version = '18.4.1',
 	author = 'Kyle Gabriel',
 	license = 'WTFPL',
 	keywords = ( 'sht sensor sensirion ic'
