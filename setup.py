@@ -13,7 +13,7 @@ except IOError: readme = ''
 setup(
 
 	name = 'sht-sensor',
-	version = '18.3.6',
+	version = '18.4.0',
 	author = 'Kyle Gabriel',
 	license = 'WTFPL',
 	keywords = ( 'sht sensor sensirion ic'
@@ -50,6 +50,8 @@ setup(
 
 	packages=find_packages(),
 	include_package_data=True,
+
+	setup_requires=["future"],
 
 	entry_points = {
 		'console_scripts': ['sht = sht_sensor.sensor:main'] })
