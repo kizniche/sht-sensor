@@ -24,7 +24,7 @@ path_gpio = '/sys/class/gpio'
 
 class GPIOAccessFailure(Exception): pass
 
-def gpio_access_wrap(func, checks=12, timeout=2.0):
+def gpio_access_wrap(func, checks=12, timeout=1.0):
 	for n in range(checks, -1, -1):
 		try: return func()
 		except (IOError, OSError): pass
